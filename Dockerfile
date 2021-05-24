@@ -1,4 +1,6 @@
-FROM python:3
+FROM alpine
+
+RUN apk add --update python3 py3-pip
 
 WORKDIR /app
 
@@ -9,5 +11,5 @@ RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
 EXPOSE 80
 
-CMD python dictionary.py
+CMD python3 dictionary.py
 
