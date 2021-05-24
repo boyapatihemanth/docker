@@ -1,2 +1,2 @@
 # docker
-sample repo
+Simple Image for testing scans
